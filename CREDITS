@@ -1,0 +1,17 @@
+	This is at least a partial credits-file of people that have
+	contributed to GitPy.  It is sorted by name and
+	formatted to allow easy grepping and beautification by
+	scripts.  The fields are: name (or username) (N), email (E),
+	web-address (W), PGP key ID and fingerprint (P), description (D),
+	country (C), GitHub profile (G).
+	Thanks,
+
+			astrdev
+----------
+
+N: astrdev
+E: astrdev.pro@pm.me
+P: ed25519/3280F890CEA40AD7 D6D1 F385 AF08 C6B6 23C9  9C4F 3280 F890 CEA4 0AD7
+G: https://github.com/astrdev
+D: Original GitPy author and maintainer
+C: Switzerland

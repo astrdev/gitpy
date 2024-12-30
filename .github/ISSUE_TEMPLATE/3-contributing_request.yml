@@ -1,0 +1,53 @@
+name: "Contributing request" 
+description: "Request to contributing to GitPy"
+labels: ['request/contributing']
+projects: ["astrdev/gitpy"]
+assignees:
+  - astrdev
+body:
+  - type: checkboxes
+    id: changes-types
+    attributes:
+      label: "What type of changes do you want to do?"
+      options:
+        - label: "Bug fix (non-breaking change which fixes an issue)"
+        - label: "New feature (non-breaking change which adds functionality)"
+        - label: "Performance improvement (non-breaking change which improves performance)"
+        - label: "Breaking change (fix, feature, or perf. improvement that would cause existing functionality to change)"
+        - label: "Documentation (no code change)"
+        - label: "Refactor (refactoring production code)"
+        - label: "Other"
+  - type: textarea
+    id: change-description
+    attributes:
+      label: "Change description"
+      description: "Describe the changes you want to do"
+      placeholder: "What I want to do is..."
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: "Reasons for the changes"
+      description: "Explain why the change is necessary"
+      placeholder: "I think that this change is necessary because..."
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: "Extra information"
+      description: "Add any other information or context about the request here"
+    validations:
+      required: false
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "I have confirmed that I searched if existing issues and pull requests already exist for the change I desire to contribute"
+          required: true
+        - label: "I read the Code of Conduct and I agree to follow it"
+          required: true
+        - label: "I read the Contributing document and I know how to contribute"
+          required: true

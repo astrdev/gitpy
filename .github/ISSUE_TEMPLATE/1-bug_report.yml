@@ -1,0 +1,72 @@
+name: "Bug Report"
+description: "Report a bug of GitPy to help us improve it"
+labels: ["bug"]
+projects: ["astrdev/gitpy"]
+assignees:
+  - astrdev
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "What's the problem?"
+      description: "Please describe the issue you are experiencing"
+      placeholder: "The bug is..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Reproduction steps"
+      description: "Please provide all detailed steps for reproducing the issue"
+      placeholder: "To reproduce the bug..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected behavior"
+      description: "What should have happened instead?"
+      placeholder: "I expected..."
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: "Actual Behavior"
+      description: "What actually happened?"
+      placeholder: "Instead, what happened was..."
+    validations:
+      required: true
+  - type: input
+    id: gitpy_version
+    attributes:
+      label: "GitPy's version"
+      description: "On which version you running GitPy?"
+      placeholder: "Example: 0.1.0 (you can find it using `gitpy version -v`)"
+    validations:
+      required: true
+  - type: input
+    id: uv_version
+    attributes:
+      label: "uv's version"
+      description: "Which version of uv did you use to create the GitPy Python's environment (and install a managed python3.11.9 in case you use it for this also)?"
+      placeholder: "Example: 0.4.4 (you can find it using `uv --version`)"
+    validations:
+      required: true
+  - type: textarea
+    id: traceback_logs
+    attributes:
+      label: "Relevant log/traceback output"
+      description: "Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks."
+      render: shell
+    validations:
+      required: false
+  - type: checkboxes
+    id: have_search
+    attributes:
+      label: "Finally, a few confirmations"
+      options:
+        - label: "I have confirmed the details provided in this report are concise as possible and does not contained vague information (e.g. versions are correct)."
+          required: true
+        - label: "I have confirmed this issue is unique and has not been reported already."
+          required: true

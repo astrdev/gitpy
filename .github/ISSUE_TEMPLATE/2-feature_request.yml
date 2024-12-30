@@ -1,0 +1,38 @@
+name: "Feature request" 
+description: "Suggest an idea for a new feature of GitPy"
+labels: ['request/feature']
+projects: ["astrdev/gitpy"]
+assignees: 
+  - astrdev
+body:
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: "Feature description"
+      description: "Describe the feature you'd like to see added"
+      placeholder: "You should add..."
+    validations:
+      required: true
+  - type: textarea
+    id: desired-solution
+    attributes:
+      label: "Desired solution"
+      description: "Describe the solution you'd like to see"
+      placeholder: "For example, when I click on..."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: "Alternatives considered"
+      description: "Have you considered any alternative solutions or workarounds?"
+      placeholder: "I've considered..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "I have confirmed that I searched if existing issues and pull requests related to what I want already exist."
+          required: true
