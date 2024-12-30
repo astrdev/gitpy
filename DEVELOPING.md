@@ -317,8 +317,8 @@ Source files are formatted via the *[Black (with tabs)][black_w_tabs_url]* and t
 
 	And this config will run the black formatter we installed before on every `.py` file.  
 
-	> [!NOTE]  
-	> These settings cannot be applied in the Workspace settings.json file. For the moment, it can only be set in the User's settings.json file.
+> [!NOTE]  
+> These settings cannot be applied in the Workspace settings.json file. For the moment, it can only be set in the User's settings.json file.
 
 And now every time you save a python file (.py) in this project, the formatters will automatically format the code for you.
 
